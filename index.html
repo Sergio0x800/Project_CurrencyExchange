@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MoneyInfo</title>
+        <meta charset="UTF-8">
+        <script src="JS/functions.js"></script>
+        <link rel="stylesheet" href="CSS/styles.css">
+    </head>
+    <body>
+        <header id="main-header">
+            <div class="container-logo">
+                <img src="IMG/logo_moneda.png" alt="">
+                <h1 class="logo">MoneyInfo</h1>
+            </div>
+            <div class="container-developer">
+                <h1>Created by: Sergio Pérez</h1>
+            </div>
+        </header>
+        <main id="main">
+            <div class="container-main">
+                <p class="container-main__name"><label id="moneda-name"></label></p>
+                <p class="container-main__result"><label id="moneda-cantidad"></label></p>
+                <p id="fecha"></p>
+                <div class="container-form">
+                    <form action="">
+                        <input type="number" class="money-amount" id="moneda_entrada" value="1">
+                        <select class="coin-options" id="options-moneda__ingreso">
+                            <option value="QTZ">Quetzal</option>
+                            <option value="USD">Dolar estadounidense</option>
+                            <option value="EUR">Euro</option>
+                        </select>
+                        <div class="container-optional">
+                            <p class="money-amount" id="moneda_salida"></p>
+                            <select class="coin-options" id="options-moneda__salida">
+                                <option value="USD">Dolar estadounidense</option>
+                                <option value="EUR">Euro</option>
+                                <option value="QTZ">Quetzal</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
